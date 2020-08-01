@@ -11,11 +11,9 @@ namespace rabbitmq_rpc_server.Domain
         public string Status => OrderStatus.ToString();
         private OrderStatus OrderStatus { get; set; }
 
-        public Order(decimal amount)
+        public void SetStatus(OrderStatus orderStatus)
         {
-            Id = DateTime.Now.Ticks;
-            OrderStatus = OrderStatus.Processing;
-            Amount = amount;
+            OrderStatus = orderStatus;
         }
     }
 }
