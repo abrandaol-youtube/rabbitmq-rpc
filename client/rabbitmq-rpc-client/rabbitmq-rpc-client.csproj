@@ -6,4 +6,8 @@
     <RootNamespace>rabbitmq_rpc_client</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="RabbitMQ.Client" Version="6.1.0" />
+  </ItemGroup>
+
 </Project>
